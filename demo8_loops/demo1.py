@@ -13,5 +13,12 @@ numbers = [45, 98, 75, 65, 24, 88, 74, 56, 75]
 
 # print all item that are less than or equal to 50
 for i in range(0,len(numbers)):
-    if numbers[i]<=50:
+    if numbers[i]==24:
         print(numbers[i])
+        break
+
+
+for i in range(0,len(numbers)):
+    if numbers[i]==24:
+        continue
+    print(numbers[i])
