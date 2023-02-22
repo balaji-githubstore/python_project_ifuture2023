@@ -36,6 +36,7 @@ print("bala","hi",87)
 
 print("The output of area of triangle is",result)
 
+
 my_name="Balaji"
 my_name.re
 
