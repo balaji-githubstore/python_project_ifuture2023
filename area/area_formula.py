@@ -1,4 +1,4 @@
-""" Module contains area related formulae by balaji"""
+""" Module contains area related formulae by balaji on feb 22"""
 import math
 
 author_name = "bala"
