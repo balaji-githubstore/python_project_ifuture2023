@@ -1,5 +1,4 @@
 class Father:
-
     def __init__(self):
         self.f_age = 65
         print("Father Constructor")
