@@ -3,8 +3,8 @@ class Student:
     school_address = None
 
 
-    def __init__(self, student_id, student_name=None, student_mailid=None, student_percentage=None):
-        self.student_id = student_id
+    def __init__(self, stu_id, student_name=None, student_mailid=None, student_percentage=None):
+        self.student_id = stu_id
         self.student_name = student_name
         self.student_mailid = student_mailid
         self.student_percentage = student_percentage
@@ -22,3 +22,14 @@ class Student:
     def get_school_detail():
         return Student.school_name + " is located at " + Student.school_address
 
+    def print_grade(self):
+        if self.student_percentage > 100 or self.student_percentage < 0:
+            print("Invalid input")
+        elif self.student_percentage >= 90:
+            print("Grade A")
+        elif self.student_percentage >= 80 and self.student_percentage <= 89:
+            print("Grade B")
+        elif self.student_percentage >= 60 and self.student_percentage <= 79:
+            print("Grade C")
+        else:
+            print("Failed, Please re-attempt")

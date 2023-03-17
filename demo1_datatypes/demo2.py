@@ -77,3 +77,32 @@ print(student_record["sports"]["outdoor"])
 check=True
 print(check)
 print(type(check))
+
+print('chess' in student_record)
+
+a = ['foo', 'bar2', 'baz', 'qux', 'corge']
+
+while a:
+    if len(a) < 3:
+        break
+    print(a.pop())
+print('Done.')
+
+
+# b=['a']
+#
+# b[1]='j'
+# print(b)
+
+d = {'a': 0, 'b': 1, 'c': 0}
+
+if d['a'] > 0:
+   print('yeah!')
+elif d['b'] > 0:
+   print('yeah!')
+elif d['c'] > 0:
+   print('ok')
+elif d['d'] > 0:
+   print('ok')
+else:
+   print('not ok')

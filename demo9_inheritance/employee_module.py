@@ -6,8 +6,8 @@ class Employee:
     company_location = None
     __company_password = "tt&"
 
-    def __init__(self):
-        self.emp_id = None  # non-static variable or instance variable
+    def __init__(self, id):
+        self._emp_id = id  # non-static variable or instance variable
         self.emp_name = None
         self.emp_salary = None
         self.emp_performance = None
@@ -32,7 +32,7 @@ class Employee:
     def display_employee_record(self):
         print(35 * "-")
         print(self)
-        print("Employee Id:", self.emp_id)
+        print("Employee Id:", self._emp_id)
         print("Employee Name:", self.emp_name)
         print("Employee Salary:", self.emp_salary)
         print("Employee Performance:", self.emp_performance)
@@ -51,3 +51,20 @@ class Employee:
         else:
             print(self.emp_name, " - no bonus")
 
+
+class ContractEmployee(Employee):
+    def __init__(self, emp_id):
+        super().__init__(emp_id)
+        self.contract_duration = None
+
+    def calculate_salary(self):
+        print("per hour basis")
+        print(self._emp_id)
+
+
+class PermanentEmployee(Employee):
+    def __init__(self, id):
+        super().__init__(id)
+
+    def calculate_salary(self):
+        print("monthly basis")

@@ -22,3 +22,11 @@ for i in range(0,len(numbers)):
     if numbers[i]==24:
         continue
     print(numbers[i])
+
+res={'a','b'}
+
+
+myit = iter(res)
+
+print(next(myit))
+print(next(myit))

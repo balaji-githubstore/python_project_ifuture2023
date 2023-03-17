@@ -10,3 +10,5 @@ print(d.title)
 #get page source
 
 time.sleep(10)
+
+d.quit()

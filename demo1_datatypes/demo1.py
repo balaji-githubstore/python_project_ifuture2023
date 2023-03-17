@@ -8,7 +8,10 @@ c=a+b
 
 print(c)
 
-my_name="Balaji"
+my_name="Payment Successfull with reference number 787878"
+
+print("787878" in my_name)
+print("787878" not in my_name)
 
 print(my_name)
 print(my_name[0])
@@ -38,7 +41,7 @@ print("The output of area of triangle is",result)
 
 
 my_name="Balaji"
-my_name.re
+# my_name.re
 
 print(type(my_name))
 

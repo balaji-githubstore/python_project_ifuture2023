@@ -40,3 +40,4 @@ print(res)
 print(res[0])
 
 print(mail_id.split("@")[0])
+
