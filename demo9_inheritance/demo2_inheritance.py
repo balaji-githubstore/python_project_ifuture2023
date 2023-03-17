@@ -5,7 +5,7 @@ class Father:
 
 class Son(Father):
     def __init__(self,f_age):
-        super().__init__()
+        super().__init__(70)
         self.s_age = 20
 
 

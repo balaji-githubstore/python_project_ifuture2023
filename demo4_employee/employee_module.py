@@ -25,6 +25,21 @@ class Employee:
         else:
             print("Invalid company code so it remains 0")
 
+    """ get property """
+
+    @property
+    def get_company_code_p(self):
+        return self.__company_code
+
+    """ set property """
+
+    @get_company_code_p.setter
+    def set_company_code_p(self, company_code):
+        if company_code > 100:
+            self.__company_code = company_code
+        else:
+            print("Invalid company code so it remains 0")
+
     @staticmethod
     def print_author_name():
         print("Author Name: ", "Balaji Dinakaran")
@@ -50,4 +65,3 @@ class Employee:
             self.emp_salary = self.emp_salary + ((2 / 100) * self.emp_salary)
         else:
             print(self.emp_name, " - no bonus")
-
