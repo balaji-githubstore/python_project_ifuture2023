@@ -22,6 +22,8 @@ print(Employee.company_name)
 
 print(e.company_name)
 print(f.company_name)
+print(f.get_company_code_p)
+# f.get_company_code_p
 #
 #
 # print(Employee.company_name)
